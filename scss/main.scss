@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+$primaryColor: #00AAB5;
+$backgroundColor:#F6F8FD;
+$textColor: #969798;
+$titleFont: 'Playfair Display', serif;
+$paragrafFont: 'Inter', serif;
+@mixin btn-style($btn-style: linear-gradient(266.32deg, #00AAB5 0%, #6CD5DC 100%)) {
+    background: $btn-style;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    border: none;
+    line-height: 21px;
+    padding: 7px 18px;
+    font-size: 14px;
+  }
+  body {
+      padding: 0;
+      margin: 0;
+      background-color: $backgroundColor;
+  }
+// NAVBAR
+  .navbar  {
+    .navbar-nav {
+        font-family: $paragrafFont;
+        font-size: 14px;
+        line-height: 21px; 
+        text-transform: uppercase;
+        .nav-link{
+            margin-right: 40px;
+        }
+        .nav-link:hover {
+            color: #00AAB5
+        }
+    }
+    .btn-primary {
+        @include btn-style();
+      }
+}
+// NAVBAR
+// HERO SECTION
+.hero-container {
+    .heading-text   {
+        font-family: $titleFont;
+        font-size: 4.5rem;
+    }
+    .sub-heading-text {
+        font-family: $paragrafFont;
+        color: $textColor;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .btn-primary {
+        @include btn-style();
+      }
+}
+// HERO SECTION
+// ABOUT US
+.about-us {
+    h3 {
+        font-family: $titleFont;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        letter-spacing: 0.035em;
+    }
+    p {
+        font-family: $paragrafFont;
+        color: $textColor;
+        font-weight: 300;
+    }
+    .btn-primary {
+        @include btn-style();
+      }
+}
+// ABOUT US
